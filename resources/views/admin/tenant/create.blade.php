@@ -1,0 +1,18 @@
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            Novo Cliente
+        </h2>
+    </x-slot>
+
+    <x-splade-modal>
+        <div class="py-12">
+            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                <x-splade-form :default="$tenant" :action="route('tenant.store', $tenant)" method="POST" class="space-y-4">
+                    <x-splade-input label="Identificador" name="id" placeholder="Digite o identificador" />
+                    <x-splade-submit label="Salvar" />
+                </x-splade-form>
+            </div>
+        </div>
+    </x-splade-modal>
+</x-app-layout>

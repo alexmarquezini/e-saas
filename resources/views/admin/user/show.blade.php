@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            Usuário
+            Usuários
         </h2>
     </x-slot>
 
@@ -9,6 +9,9 @@
         <x-splade-modal>
             <x-splade-data :default="$user">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                    <h3 class="font-semibold text-xl py-4 text-gray-800 leading-tight">
+                        Detalhe do Usuário
+                    </h3>
                     <ul role="list" class="divide-y divide-gray-200">
                         <li class="py-4 flex">
                             <div class="ml-3">

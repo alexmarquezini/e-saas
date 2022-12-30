@@ -1,13 +1,16 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            Editar Usuário
+            Usuários
         </h2>
     </x-slot>
 
     <div class="py-12">
         <x-splade-modal>
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                <h3 class="font-semibold text-xl py-4 text-gray-800 leading-tight">
+                    Editar Usuário
+                </h3>
                 <x-splade-form :default="$user" :action="route('user.update', $user)" method="PATCH" class="space-y-4">
                     <x-splade-input label="Nome" name="name" />
                     <x-splade-input label="E-mail" name="email" type="email" />

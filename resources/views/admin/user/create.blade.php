@@ -1,13 +1,16 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            Criar Usuário
+            Usuários
         </h2>
     </x-slot>
 
     <x-splade-modal>
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                <h3 class="font-semibold text-xl py-4 text-gray-800 leading-tight">
+                    Criar Usuário
+                </h3>
                 <x-splade-form :default="$user" :action="route('user.store', $user)" method="POST" class="space-y-4">
                     <x-splade-input label="Nome" name="name" placeholder="Digite o nome" />
                     <x-splade-input label="E-mail" name="email" type="email"
